@@ -17,7 +17,7 @@ namespace View
             int menu = 0;
             Console.WriteLine("Input age of cat");
             Cat cat = new Cat(Console.ReadLine());
-
+        
             do
             {
                 Console.WriteLine("\nName: {0}", cat.Name);
@@ -36,7 +36,7 @@ namespace View
                         cat.Name = Convert.ToString(Console.ReadLine());
                         break;
                     case 2:
-                        
+                        Console.WriteLine("Change current color of cat");
                         cat.CurrentColor = Convert.ToString(Console.ReadLine());
                         break;
                     case 3:

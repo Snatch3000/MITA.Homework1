@@ -49,7 +49,7 @@ namespace Model
             get
             {
                 
-                if (_health==5)
+                if (_health>=5)
                 return cet.HealthColor;
                 else
                 {
@@ -59,7 +59,7 @@ namespace Model
             set
             {
                 
-                if (_health == 5)
+                if (_health >= 5)
                     cet.HealthColor = value;
                 else
                 {
@@ -71,13 +71,13 @@ namespace Model
 
         public void Feed()
         {
-            if (_health!=5)
+            
             _health = _health + 1;
         }
 
         public void Punish()
         {
-            if (_health != 0)
+            
                 _health = _health - 1;
         }
 
